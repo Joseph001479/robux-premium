@@ -22,7 +22,9 @@
 body {
     background-color: var(--black);
     color: var(--white);
+    max-width: 100%;
     overflow-x: hidden;
+    position: relative;
     padding-top: 80px;
 }
 
@@ -579,7 +581,7 @@ a.btn-product {
 .benefits-carousel {
     display: flex;
     gap: 20px;
-    padding: 20px 0 20px 8vw;
+    padding: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -1079,4 +1081,5 @@ a.btn-product {
         padding: 14px 4px;
         border-radius: 10px;
     }
+
 }
