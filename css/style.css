@@ -581,7 +581,7 @@ a.btn-product {
 .benefits-carousel {
     display: flex;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -1081,5 +1081,44 @@ a.btn-product {
         padding: 14px 4px;
         border-radius: 10px;
     }
+}
+/* Card escurecido quando esgotado */
+.card-esgotado {
+  position: relative;
+  filter: grayscale(100%) brightness(0.4);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
 
+/* Selo ESGOTADO */
+.selo-esgotado {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  background-color: #ff0033;
+  color: white;
+  padding: 5px 50px;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+  z-index: 5;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* Botão desativado */
+.esgotado-btn {
+  background: linear-gradient(to right, #555, #333);
+  color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  opacity: 0.8;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
 }
